@@ -13,8 +13,12 @@ header {
     margin: 1rem;
 }
 
-.logo {
-}
+body {
+    color: hsl(230, 100%, 95%);
+    background: linear-gradient(135deg, hsl(230, 40%, 12%), hsl(230, 20%, 7%));
+   
+  }
+
 
 .container {
  display: flex;
@@ -94,7 +98,9 @@ li {
     left: 2rem;
     line-height: 2;
     margin-left: 3rem;
+
  }
+
 
  button {
     background-color: transparent;
@@ -139,4 +145,56 @@ li {
     cursor: pointer;
  }
 
+ @keyframes lights {
+    0% {
+      color: hsl(230, 40%, 80%);
+      text-shadow:
+      0 0 1em hsla(118, 98%, 33%, 0.5),
+      0 0 0.125em hsla(106, 94%, 42%, 0.5),
+      -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+        1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+    
+    30% { 
+      color: hsl(230, 80%, 90%);
+      text-shadow:
+      0 0 1em hsla(118, 98%, 33%, 0.5),
+      0 0 0.125em hsla(106, 94%, 42%, 0.5),
+      -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+        0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    40% { 
+      color: hsl(230, 100%, 95%);
+      text-shadow:
+      0 0 1em hsla(118, 98%, 33%, 0.5),
+      0 0 0.125em hsla(106, 94%, 42%, 0.5),
+      -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+        0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    70% {
+      color: hsl(230, 80%, 90%);
+      text-shadow:
+        0 0 1em hsla(118, 98%, 33%, 0.5),
+        0 0 0.125em hsla(106, 94%, 42%, 0.5),
+        0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+        -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    100% {
+      color: hsl(230, 40%, 80%);
+      text-shadow:
+        0 0 1em hsla(128, 98%, 19%, 0.2),
+        0 0 0.125em hsla(133, 93%, 29%, 0.3),
+        1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+        -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+    
+  }
+  
+  
+  h1 {
+    animation: lights 5s 750ms linear infinite;
+  }
  
