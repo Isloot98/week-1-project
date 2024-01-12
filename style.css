@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'MedievalSharp', cursive;
+}
+
+header {
+    position: fixed;
+}
+
+.logo > h1 {
+    color: white;
+}
+
+.container {
+ display: flex;
+ flex-direction: row;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0;
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    color: white;
+  }
+
+li {
+    margin-left: 1rem;
+}
+.shire {
+   height: 100vh;
+   background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/89/Hobbit_holes_reflected_in_water.jpg'); 
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+.go-to-mordor {
+    height: 100vh;
+    background-image: url('https://cdn.discordapp.com/attachments/994287501470601314/1195324523466203137/eye-of-sauron-lord-of-the-rings-4k-wallpaper-uhdpaper.png?ex=65b393b6&is=65a11eb6&hm=1916d554c9edebf1826cb753473af1a5df48323b24bba5a6dc8feb3163b7f691&'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+
+ .may-survive {
+    height: 100vh;
+    background-image: url('https://cdn.discordapp.com/attachments/994287501470601314/1195326705376690206/mzEXM.png?ex=65b395be&is=65a120be&hm=ce30330fd44a19f0e4bb6f5773598b058eb430407c4836393f9cb89665958909&'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
