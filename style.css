@@ -13,7 +13,7 @@ header {
     margin: 1rem;
 }
 
-.logo > h1 {
+.logo {
 }
 
 .container {
@@ -30,16 +30,16 @@ ul {
     margin-left: 1rem;
 }
 
-a {
+.nav > ul > li > a {
     text-decoration: none;
     transition: color 0.5s ease, cursor 0.5s ease; 
 
   }
   
-  a:hover
+  .nav > ul > li > a:hover
   {
     cursor: pointer;
-    color: grey;
+    color: black;
 
   }
 
@@ -98,10 +98,10 @@ li {
 
  button {
     background-color: transparent;
-    height: 3rem;
+    height: 2rem;
     border: 2px solid #FBF6F3;
     transition: background-color 0.5s ease, color 0.5s ease;
-    width: 12rem;
+    width: 15rem;
     margin-bottom: 10rem;
  }
 
@@ -125,3 +125,18 @@ li {
     margin-top: 0.7rem;
  }
 
+ .footer-content > ul {
+    left: 15rem;
+ }
+
+ .footer-content > ul > li > a {
+    text-decoration: none;
+    transition: color 0.5s ease, cursor 0.5s ease;
+ }
+
+ .footer-content > ul > li > a:hover {
+    color: grey;
+    cursor: pointer;
+ }
+
+ 
