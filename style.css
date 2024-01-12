@@ -194,7 +194,7 @@ li {
   }
   
   
-  h1 {
+  h1, h2, h3 {
     animation: lights 5s 750ms linear infinite;
   }
  
