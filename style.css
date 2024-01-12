@@ -2,14 +2,16 @@
     margin: 0;
     padding: 0;
     font-family: 'MedievalSharp', cursive;
+    color: #FBF6F3 ;
+
 }
 
 header {
     position: fixed;
+    margin: 1rem;
 }
 
 .logo > h1 {
-    color: white;
 }
 
 .container {
@@ -23,24 +25,47 @@ ul {
     align-items: center;
     padding: 10px 0;
     list-style: none;
-
+    margin-left: 1rem;
 }
 
 a {
     text-decoration: none;
-    color: inherit;
-    color: white;
+    transition: color 0.5s ease, cursor 0.5s ease; 
+
+  }
+  
+  a:hover
+  {
+    cursor: pointer;
+    color: grey;
+
   }
 
 li {
     margin-left: 1rem;
+
 }
-.shire {
+
+
+
+
+.rivendell {
    height: 100vh;
-   background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/89/Hobbit_holes_reflected_in_water.jpg'); 
+   background-image: url('https://cdn.discordapp.com/attachments/1083706111456198657/1195330800250531911/image.png?ex=65b3998e&is=65a1248e&hm=5d7e25789b5cac6a39edb01884f6214513cbc85e490f3b1f449fd8a9cdf66abb&'); 
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
+   position: relative;
+   z-index: 0;
+}
+
+
+.shire {
+    height: 100vh;
+    background-image: url('https://cdn.discordapp.com/attachments/1083706111456198657/1195328414295543829/file-2VXHBgQAZaAvSwcW5QhZ7rC8.png?ex=65b39756&is=65a12256&hm=51d21dc92c5464fc1107f45af4d6b46a1e4a4a6e8cf415c623e11dd2a4585953&'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .go-to-mordor {
@@ -58,3 +83,43 @@ li {
     background-position: center;
     background-repeat: no-repeat;
  }
+
+ .tile-text {
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    left: 2rem;
+    line-height: 2;
+    margin-left: 3rem;
+ }
+
+ button {
+    background-color: transparent;
+    height: 3rem;
+    border: 2px solid #FBF6F3;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    width: 12rem;
+    margin-bottom: 3rem;
+ }
+
+ button:hover {
+    cursor: pointer;
+    background-color: #FBF6F3;
+    color: black;
+ }
+
+ footer {
+    background-color: black;
+    
+ }
+
+ .footer-content {
+    display: flex;
+    flex-direction: row;
+ }
+
+ .footer-content > p {
+    margin-top: 0.7rem;
+ }
+
